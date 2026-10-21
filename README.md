@@ -178,5 +178,6 @@ que fàcilitin el seu treball, descartant opcions
 de quin problema pot estar patint el pacient.
 
 Aquesta és la finalitat del nostre projecte.
+
 [OFAI](https://github.com/ikerortiz1780/ofai.git)
 ### LucasProject
