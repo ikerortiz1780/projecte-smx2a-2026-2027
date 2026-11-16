@@ -129,20 +129,20 @@ El nostre objectiu és aconseguir un sistema segur, fàcil d'utilitzar, fiable i
 ### OfAI
 
 #### 1.IDEA GENERAL
-OFAI es un model d'IA personal,
+OFAI es un model d'IA situada en el sector Sanitari,
 destinada a brindar suport als metges (oftalmolegs) davant
 consultes o si aquestos necessiten ajuda.
 
 #### 2.INFRAESTRUCTURA
 Per desenvolupar el projecte OFAI, utilitzarem les tecnologies i els components següents:
 
-* Docker
-* Web Pública
-* Web Privada
-* Base de Dades
-* Intranet
-* Models d'IA
-* Maquinari
+* Docker: Es una plataforma de contenidors i gestionar els diferents serveis del sistema.
+* Web Pública: La web on els usuaris interaccionen amb l'IA fent-li consultes.
+* Web Privada: Pàgina web en la que els professionals proporcionen casos i revisen respostes a les IA's per que aprenguin correctament.
+* Base de Dades: Sistema encarregat d'emmagatzemar les consultes, els casos, les respostes dels models i el feedback dels professionals.
+* Intranet: Xarxa privada que permet la comunicació i accés als recursos interns del sistema per els professionals.
+* Models d'IA: Models d'IA que processen l'informació rebuda i generen respostes respostes.
+* Maquinari: Servidors físics, equips informatic i tot el hardware important per fer que la IA funcioni correctament i tingui recursos per funcionar
 
 #### 2.CONTEXT
 Per aquest projecte farem ús de dockers,
@@ -153,13 +153,34 @@ També no farem ús d'un model creat per nosaltres desde 0,
 si no que, en farem ús de models oberts d'us gratuit que els aconseguirem
 de la web "Ollama" i veurem altres opcions per correr els models d'Inteligencia Artificial
 
-#### 3.ABAST
+Ofai no es una IA que estigui destinada a una sola empresa, sinó que es una IA que es desenvolupa
+amb una finalitat experimental i d'aprenentatge per veure que pot oferir la IA dins del sector mèdic
+
+#### 3.COMPOSICIÓ
+Dins del projecte els components que formen part del projecte son:
+* 1 servidor per allotjar la pàgina web
+* Joomla, un backend que ens deixi editar la pàgina web i poguem afegir extensions
+* A
+
+#### 4.ABAST
 L'abast del nostre projecte seria l'opinió de profesionals de l'informació que rebem de l'IA.
 Perque no podem solicitar l'ajuda d'Oftalmolegs,
 obviem el feedback dels professionals
 al moment de veure les respostes de l'IA.
 
-#### 4.DESENVOLUPAMENT DE L'INTELIGENCIA ARTIFICIAL
+#### 5.RELACIÓ, INTERACCIÓ AMB ELS COMPONENTS (INTERNS O EXTERNS)
+Internes (no són accessibles des de l'exterior del sistema):
+Internes i Externes (ofereixen interacció amb el món exterior):
+
+* Docker: Gestiona els contenidors o s'executa la pàgina web, la base de dades i els model d'IA. (INTERNA)
+* Web Pública: Permet que els usuaris afegeixin respostes i consultes i aquestes es passen a la pàgina privada. (INTERNA I EXTERNA)
+* Web Privada: A partir de les respostes i consultes dels usuaris ara es passen a la pàgina privada per que els professionals califiquin. (INTERNA I EXTERNA)
+* Base de Dades: Emmagatzema i proporciona la informació per les webs i als models d'IA. (INTERNA)
+* Intranet: Facilita la comunicació interna i l'accés dels professionals a la web privada i als recursos interns. (INTERNA I EXTERNA)
+* Models d'IA: Reben les consultes, processen informació i retornen les respostes a la web correspondent. (INTERNA)
+* Maquinari: Dona els recursos per que Docker pugui executar els diferents serveis. (INTERNA)
+
+#### 5.DESENVOLUPAMENT DE L'INTELIGENCIA ARTIFICIAL
 La idea es veure el desenvolupament de diferents Intel·ligencia Artificial provinents
 d'un mateix hardware rebent la mateixa informació.
 
@@ -167,7 +188,7 @@ Aquesta mateixa s'entrenará mitjançant els casos que els oftalmolegs proporcio
 Una vegada ens donen l'informació els doctors donaran el seu feedback de cada resposta
 i amb aquest feedback que se lis retora veure com es desenvolupen.
 
-#### 5.FINALITAT DEL PROJECTE
+#### 6.FINALITAT DEL PROJECTE
 La finalitat del projecte no és molt complicat.
 El que nosaltres ens centrarem en veure, és en el fet de que els tres models
 del mateix hardware ens donin respostes i mitjançant el feedback veure com es desenvolupen.
@@ -177,7 +198,8 @@ La qual, si bé no busquem que remplaci als mateixos oftalmolegs,
 que fàcilitin el seu treball, descartant opcions
 de quin problema pot estar patint el pacient.
 
-Aquesta és la finalitat del nostre projecte.
+En conclusió, la finalitat d'OFAI es estudiar com diferents models d'Intel·ligencia Artificial
+poden evolucionar i arribar a convertirse en una eina de professionals de l'oftalmologia.
 
 [OFAI](https://github.com/ikerortiz1780/ofai.git)
 ### LucasProject
